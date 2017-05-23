@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.bkg.oakyildiz.suits">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/suits_icon_img"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/suits_icon_round_img"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".SplashActivity"
+            android:theme="@style/SplashTheme"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".SelectionActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/app_name"
+            android:theme="@style/FullscreenTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.bkg.oakyildiz.suits.SplashActivity" />
+
+        </activity>
+        <activity
+            android:name=".InboxActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/title_activity_inbox"
+            android:parentActivityName=".SelectionActivity"
+            android:theme="@style/FullscreenTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.bkg.oakyildiz.suits.SelectionActivity" />
+        </activity>
+    </application>
+
+</manifest>

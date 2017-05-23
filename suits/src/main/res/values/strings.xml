@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">SUITS</string>
+
+
+    <string name="name1" class="name">Harvey\nSpecter</string>
+    <string name="last1" class="last">Specter</string>
+    <string name="name2" class="name">MIKE\nRoss</string>
+    <string name="last2" class="last">Ross</string>
+
+    <string name="question">who\'s your favorite?</string>
+
+    <string name="title_activity_inbox">Inbox</string>
+
+
+</resources>

@@ -1,0 +1,116 @@
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context="com.bkg.oakyildiz.suits.SelectionActivity">
+
+
+
+
+            <LinearLayout
+                android:id="@+id/menu_buttons"
+                android:orientation="vertical"
+                style="?metaButtonBarStyle"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                android:layout_weight="1"
+                android:layout_alignParentTop="true"
+                android:layout_gravity="top|center_horizontal"
+                android:background="@color/background"
+                >
+
+                <TextView
+                    android:id="@+id/title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="top"
+
+                    android:elevation="4dp"
+                    android:padding="10dp"
+                    android:text="@string/app_name"
+                    android:textAlignment="center"
+                    android:textAppearance="@style/Titles" />
+
+                <FrameLayout
+                    android:id="@+id/harvey_frame"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:background="@drawable/border"
+                    android:paddingTop="3dip"
+                    android:paddingBottom="2dip"
+                    >
+
+                        <Button
+                            android:id="@+id/harvey_button"
+                            android:onClick="openInbox"
+                            style="?metaButtonBarButtonStyle"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:paddingLeft="25dp"
+                            android:background="@drawable/harvey_btn_bck"
+                            android:text="@string/name1"
+                            android:gravity="left|center_vertical"
+                            android:textAppearance="@style/Titles"/>
+
+                </FrameLayout>
+
+                <TextView
+
+                    android:id="@+id/question_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="28dp"
+                    android:gravity="center"
+                    android:text="@string/question"
+                    android:textAlignment="center"
+                    android:textAppearance="@style/Subtext"
+                    />
+
+                <FrameLayout
+                    android:id="@+id/mike_frame"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:background="@drawable/border"
+                    android:paddingTop="3dip"
+                    android:paddingBottom="2dip"
+           >
+
+
+
+                    <Button
+                        android:id="@+id/mike_button"
+                        android:onClick="openInbox"
+                        style="?metaButtonBarButtonStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:paddingRight="25dp"
+                        android:background="@drawable/mike_btn_bck"
+                        android:text="@string/name2"
+                        android:gravity="right|center_vertical"
+                        android:textAppearance="@style/Titles"
+                        />
+                </FrameLayout>
+
+                <ImageView
+                    android:id="@+id/logo"
+                    android:layout_width="match_parent"
+                    android:layout_height="52dp"
+
+                    android:layout_gravity="bottom"
+                    android:padding="30dp"
+                    android:textAlignment="center"
+                    android:adjustViewBounds="true"
+
+                    android:background="@color/background"
+                    android:src="@drawable/usa_logo"
+                    app:srcCompat="@drawable/usa_logo"
+                    android:layout_weight="0.21" />
+            </LinearLayout>
+
+
+
+</android.support.design.widget.CoordinatorLayout>
